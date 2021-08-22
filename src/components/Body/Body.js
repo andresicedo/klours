@@ -1,11 +1,11 @@
 import React from 'react'
-import TopFeature from '../TopFeature/TopFeature';
+import Palette from '../Palette/Palette';
 import './Body.css';
 
 export default function Body() {
     return (
         <div>
-            <TopFeature />
+            <Palette />
             <p style={{textAlign: 'center'}}>Color Palette of the Week</p>
         </div>
     )
