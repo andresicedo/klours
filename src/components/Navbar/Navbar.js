@@ -11,6 +11,7 @@ export default function Navbar() {
         <div className='navbarContainer'>
             <div className='navbarLeft'>
                 <img alt="companyLogo" src={Logo} style={{width: '150px', height: 'auto'}} />
+                <p style={{marginTop: '30px', marginLeft: '-20px'}}>Colours</p>
             </div>
             <div className='navbarRight'>
                 <p>

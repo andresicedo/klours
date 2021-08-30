@@ -3,3 +3,10 @@
     width: 200px;
     border-radius: 50%;
 }
+
+.hexColor {
+    margin-top: 10px;
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+}

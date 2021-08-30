@@ -1,4 +1,5 @@
 import React from 'react'
+import DiscountModal from '../../Modals/DiscountModal';
 import Palette from '../Palette/Palette';
 import './Body.css';
 
@@ -6,7 +7,11 @@ export default function Body() {
     return (
         <div>
             <Palette />
-            <p style={{textAlign: 'center'}}>Color Palette of the Week</p>
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+                <p style={{ textAlign: 'center', marginRight: '10px', marginTop: '5px' }}>Color Palette of the Week</p>
+                <DiscountModal />
+            </div>
+            
         </div>
     )
 }
