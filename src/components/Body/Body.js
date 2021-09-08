@@ -2,6 +2,9 @@ import React from 'react'
 import DiscountModal from '../../Modals/DiscountModal';
 import Palette from '../Palette/Palette';
 import Ideas from '../Ideas/Ideas';
+import Products from '../Products/Products';
+import UserPalette from '../UserPalette/UserPalette';
+import Media from '../Media/Media';
 import './Body.css';
 
 export default function Body() {
@@ -13,6 +16,9 @@ export default function Body() {
                 <DiscountModal />
             </div>
             <Ideas />
+            <Products />
+            <UserPalette />
+            <Media />
         </div>
     )
 }
