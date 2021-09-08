@@ -14,9 +14,9 @@ export default function Ideas() {
                 <p>Project Ideas</p>
             </div>
             <div className="ideaCards">
-                <Card />
-                <Card />
-                <Card />
+                <Card room={'Bedroom'}/>
+                <Card room={'Kitchen'}/>
+                <Card room={'Outdoor'}/>
             </div>
         </div>
     )
