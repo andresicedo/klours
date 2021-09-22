@@ -1,0 +1,6 @@
+.carousel {
+    width: 65%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
