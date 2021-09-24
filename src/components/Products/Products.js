@@ -3,7 +3,7 @@ import './Products.css';
 import Card from '../Card/Card';
 import HomePaint from '../../assets/images/HomePaint.jpg';
 import StainedWood from '../../assets/images/StainedWood.jpg';
-import ConcreteFloor from '../../assets/images/ConcreteFloor.jpg';
+import ConcreteFloor from '../../assets/images/ConcreteFloor.png';
 import Carousel from '../Carousel/Carousel';
 
 export default function Products() {
