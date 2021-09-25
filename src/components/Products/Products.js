@@ -1,6 +1,5 @@
 import React from 'react'
 import './Products.css';
-import Card from '../Card/Card';
 import HomePaint from '../../assets/images/HomePaint.jpg';
 import StainedWood from '../../assets/images/StainedWood.jpg';
 import ConcreteFloor from '../../assets/images/ConcreteFloor.png';
@@ -8,10 +7,14 @@ import Carousel from '../Carousel/Carousel';
 
 export default function Products() {
 
+    let homePaintText = "Considering a new coat of paint to take your home interior to the next level? We've got you covered."
+    let stainingText = "Protect the surface of furniture in style. Our staining products will take your project from good, to great!";
+    let concreteText = "Need to fill or repair control joints, random cracks, or voids? Take a look at our concrete coating, preparation and decorative products.";
+
     let carouselDetails = {
-        paintingProducts: ['Painting Products', HomePaint, 'Test'],
-        stainingProducts: ['Staining Products', StainedWood, 'Test'],
-        concreteProducts: ['Concrete Products', ConcreteFloor, 'Test'],
+        paintingProducts: ['Painting Products', HomePaint, homePaintText],
+        stainingProducts: ['Staining Products', StainedWood, stainingText],
+        concreteProducts: ['Concrete Products', ConcreteFloor, concreteText],
     }
 
     return (
@@ -19,14 +22,7 @@ export default function Products() {
             <div>
                 <p>Products Component</p>
             </div>
-
            <Carousel carouselDetails={carouselDetails}/>
-
-            <div className='productsCards'>
-                <Card type={'Painting Products'} cardImg={HomePaint} cardText={'Test'} />
-                <Card type={'Staining Products'} cardImg={StainedWood} cardText={'Test'} />
-                <Card type={'Concrete Products'} cardImg={ConcreteFloor} cardText={'Test'} />
-            </div>
         </div>
     )
 }
