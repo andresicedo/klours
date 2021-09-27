@@ -1,0 +1,16 @@
+.colorSelectionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.selectedPallette {
+    display: flex;
+    flex-direction: row;
+}
+
+.paletteOptions {
+    display: flex;
+    flex-direction: column;
+}
