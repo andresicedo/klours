@@ -17,6 +17,14 @@ export default function ColorSelection() {
         ['EDE1CE', '73645D', 'B9B2AC', 'C0C1BC', 'FFFFFF']
     ];
 
+    let getFirstColor = (array) => {
+        let result = [];
+        for (let i = 1; i < array.length; i++) {
+            const element = array[i][0];
+            result.push(element);
+        }
+        return result;
+    }
     
 
     return (
@@ -29,7 +37,12 @@ export default function ColorSelection() {
                 }
             </div>
             <div className="paletteOptions">
-                <Square w={45} h={45} m={6}/>
+                {
+                    getFirstColor(colorOptions).map((option) => (
+                        <Square key={option} w={45} h={45} m={6} bgColor={option}/>
+                    ))
+                }
+                
                 <Square w={45} h={45} m={6}/>
                 <Square w={45} h={45} m={6}/>
                 <Square w={45} h={45} m={6}/>
