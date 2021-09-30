@@ -42,10 +42,6 @@ export default function ColorSelection() {
                         <Square key={option} w={45} h={45} m={6} bgColor={option}/>
                     ))
                 }
-                
-                <Square w={45} h={45} m={6}/>
-                <Square w={45} h={45} m={6}/>
-                <Square w={45} h={45} m={6}/>
             </div>
         </div>
     )

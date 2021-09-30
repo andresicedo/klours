@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card'
 import './Ideas.css'
-import ProjectIdeasImg from '../../assets/images/ProjectIdeas.jpg'
 import Bedroom from '../../assets/images/Bedroom.jpg';
 import Kitchen from '../../assets/images/Kitchen.jpg';
 import Outdoor from '../../assets/images/Outdoor.jpg';
@@ -14,13 +13,10 @@ export default function Ideas() {
 
 
     return (
-        <div>
-            <div className="ideasTitle" 
-            style={{
-                backgroundImage: `url(${ProjectIdeasImg})`, 
-                backgroundSize: 'cover', 
-                objectFit: 'contain'}}>
-                <p>Project Ideas</p>
+        <div className="ideasContainer">
+            <div style={{backgroundColor: '#fcf5e9'}}>
+                <p className="ideasTitle">Project Ideas</p>
+                <p className="ideasSummary">Paint a room in your home and brighten up any space in no time</p>
             </div>
             <div className="ideaCards">
                 <Card type={'Bedroom'} cardImg={Bedroom} cardText={bedroomIdeas}/>

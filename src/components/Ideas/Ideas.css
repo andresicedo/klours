@@ -1,16 +1,19 @@
-.ideasTitle {
-    display: 'flex'; 
-    justify-content: center;
-    height: 150px;
+.ideasContainer {
+    margin-top: 33px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.ideasTitle p { 
-    font-size: 80px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 5%;
-    padding-top: 15px;
-    color: black;
+.ideasTitle { 
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.ideasSummary {
+    font-size: 40px;
+    margin-left: 15px;
+    color: rgb(51, 51, 51);
 }
 
 .ideaCards {
