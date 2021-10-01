@@ -1,3 +1,21 @@
+.productsContainer {
+  margin-top: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.productsTitle {
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+  margin-left: 15px;
+  padding-top: 10px;
+}
+
+.productsSummary {
+  font-size: 40px;
+  margin-left: 15px;
+  color: rgb(51, 51, 51);
+}
+
 .productsCards {
     display: flex;
     justify-content: space-evenly;

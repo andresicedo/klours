@@ -18,9 +18,10 @@ export default function Products() {
     }
 
     return (
-        <div>
-            <div>
-                <p>Products Component</p>
+        <div className="productsContainer">
+            <div style={{backgroundColor: '#fcf5e9'}}>
+                <p className="productsTitle">Our Products</p>
+                <p className="productsSummary">We offer a variety of quality products for your next project</p>
             </div>
            <Carousel carouselDetails={carouselDetails}/>
         </div>
