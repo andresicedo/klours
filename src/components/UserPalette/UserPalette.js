@@ -4,9 +4,10 @@ import './UserPalette.css';
 
 export default function UserPalette() {
     return (
-        <div>
-            <div>
-                User Palette Component
+        <div className="userPaletteContainer">
+            <div style={{backgroundColor: '#fcf5e9'}}>
+                <p className="userPaletteTitle">Popular Paints</p>
+                <p className="userPaletteSummary">Check out some of our most popular palettes</p>
             </div>
             <div>
                 <ColorSelection />

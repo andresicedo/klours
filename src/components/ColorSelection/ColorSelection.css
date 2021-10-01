@@ -14,3 +14,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.colorOptionButton {
+    border: none;
+    background-color: none;
+}

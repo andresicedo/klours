@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Rectangle from '../Rectangle/Rectangle';
 import Square from '../Square/Square';
 import './ColorSelection.css';
 
 export default function ColorSelection() {
+    const [selected, setSelected] = useState(0);
 
     let getWidth = (idx) => {
         return (idx === 0 ? 120 : 75);
@@ -25,13 +26,27 @@ export default function ColorSelection() {
         }
         return result;
     }
+
+    let findColorIndex = (string, array) => {
+        let idx;
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i][0];
+            if (element === string) {
+                idx = i;
+            } else {
+                continue;
+            }
+        }
+        setSelected(idx)
+    }
+
     
 
     return (
         <div className="colorSelectionContainer">
             <div className="selectedPallette">
                 {
-                    colorOptions[0].map((option) => (
+                    colorOptions[selected].map((option) => (
                         <Rectangle key={option} w={getWidth(colorOptions[0].indexOf(option))} h={200} m={10} bgColor={option}/>
                     ))
                 }
@@ -39,7 +54,9 @@ export default function ColorSelection() {
             <div className="paletteOptions">
                 {
                     getFirstColor(colorOptions).map((option) => (
-                        <Square key={option} w={45} h={45} m={6} bgColor={option}/>
+                        <button className="colorOptionButton">
+                            <Square key={option} w={45} h={45} m={6} bgColor={option}/>
+                        </button>
                     ))
                 }
             </div>
