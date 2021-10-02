@@ -27,18 +27,7 @@ export default function ColorSelection() {
         return result;
     }
 
-    let findColorIndex = (string, array) => {
-        let idx;
-        for (let i = 0; i < array.length; i++) {
-            const element = array[i][0];
-            if (element === string) {
-                idx = i;
-            } else {
-                continue;
-            }
-        }
-        setSelected(idx)
-    }
+    
 
     
 
@@ -55,7 +44,7 @@ export default function ColorSelection() {
                 {
                     getFirstColor(colorOptions).map((option) => (
                         <button className="colorOptionButton">
-                            <Square key={option} w={45} h={45} m={6} bgColor={option}/>
+                            <Square key={colorOptions.indexOf(option)} w={45} h={45} m={6} bgColor={option}/>
                         </button>
                     ))
                 }
