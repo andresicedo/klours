@@ -1,18 +1,20 @@
 .colorSelectionContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+    flex-direction: column;
+    justify-content: center;
 }
 
 .selectedPallette {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: center;    
 }
 
 .paletteOptions {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .colorOptionButton {

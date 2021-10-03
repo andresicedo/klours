@@ -20,35 +20,36 @@ export default function ColorSelection() {
 
     let getFirstColor = (array) => {
         let result = [];
-        for (let i = 1; i < array.length; i++) {
+        for (let i = 0; i < array.length; i++) {
             const element = array[i][0];
             result.push(element);
         }
         return result;
     }
 
-    
 
     
 
     return (
         <div className="colorSelectionContainer">
-            <div className="selectedPallette">
-                {
-                    colorOptions[selected].map((option) => (
-                        <Rectangle key={option} w={getWidth(colorOptions[0].indexOf(option))} h={200} m={10} bgColor={option}/>
-                    ))
-                }
-            </div>
             <div className="paletteOptions">
                 {
                     getFirstColor(colorOptions).map((option) => (
-                        <button className="colorOptionButton">
-                            <Square key={colorOptions.indexOf(option)} w={45} h={45} m={6} bgColor={option}/>
+                        <button className="colorOptionButton" key={option} onClick={() => { setSelected(getFirstColor(colorOptions).indexOf(option)) }}>
+                            <Square key={option} w={45} h={45} m={6} bgColor={option}/>
                         </button>
                     ))
                 }
             </div>
+
+            <div className="selectedPallette">
+                {
+                    colorOptions[selected].map((option) => (
+                        <Rectangle key={option} w={getWidth(colorOptions[selected].indexOf(option))} h={200} m={10} bgColor={option}/>
+                    ))
+                }
+            </div>
+            
         </div>
     )
 }
