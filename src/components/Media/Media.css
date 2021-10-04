@@ -1,0 +1,6 @@
+.mediaContainer {
+    background-color: #465058;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
