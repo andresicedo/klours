@@ -3,4 +3,26 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: white;
+}
+
+.mediaLeft {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.locationsContainer {
+    margin-left: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.locationsContainer p {
+    margin-top: -10px;
+}
+
+.mediaRight {
+    display: flex;
+    justify-content: flex-start;
 }
