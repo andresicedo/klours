@@ -1,0 +1,10 @@
+.logoContainer {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+}

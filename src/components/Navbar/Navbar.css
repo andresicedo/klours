@@ -3,12 +3,20 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 15px;
+    background-color: #fafafa;
 }
 
 .navbarLeft {
-    margin-left: 5px;
+    margin-left: 15px;
     display: flex;
     flex-direction: row;
+}
+
+.companyName {
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 21px;
+    font-weight: bold;
 }
 
 .navbarRight {

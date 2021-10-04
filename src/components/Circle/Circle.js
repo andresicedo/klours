@@ -8,7 +8,7 @@ export default function Circle({ currentColor }) {
         <div>
             <div className="circle" style={{backgroundColor: `#${currentColor}`}}></div>
             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
-                <p id="hexColor"className="hexColor" style={{marginTop: '21px'}}>{`#${currentColor}`}</p>
+                <p id="hexColor"className="hexColor" style={{marginTop: '21px', fontWeight: 'bolder'}}>{`#${currentColor}`}</p>
                 <button 
                     onClick={() =>  navigator.clipboard.writeText(currentColor)}
                     style={{background: 'none', border:"none"}}>

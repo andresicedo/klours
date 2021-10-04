@@ -8,7 +8,7 @@ export default function Card({type, cardImg, cardText}) {
             <div className="card-body">
                 <h5 className="card-title">{type}</h5>
                 <p className="card-text" style={{height: '60%'}}>{cardText}</p>
-                <button className="btn btn-primary">Explore</button>
+                <button className="btn cardBtn">Explore</button>
             </div>
         </div>
     )

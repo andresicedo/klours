@@ -3,7 +3,7 @@ import './Media.css';
 
 export default function Media() {
     return (
-        <div>
+        <div id="contact">
             Social Media Component
         </div>
     )

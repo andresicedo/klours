@@ -18,7 +18,7 @@ export default function DiscountModal() {
 
     return (
         <div>
-            <button onClick={generateRandomDiscountCode} type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button onClick={generateRandomDiscountCode} style={{backgroundColor: '#3A4740', color: 'white', marginTop: '5px'}} type="button" className="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 20% Discount Now
             </button>
             {/* Modal */}
@@ -26,7 +26,7 @@ export default function DiscountModal() {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Color Palette Discount</h5>
+                            <h2 className="modal-title" id="exampleModalLabel" >Color Palette Discount</h2>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
                         </div>
                         <div className="modal-body">
