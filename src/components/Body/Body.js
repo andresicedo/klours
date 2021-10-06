@@ -4,7 +4,6 @@ import Palette from '../Palette/Palette';
 import Ideas from '../Ideas/Ideas';
 import Products from '../Products/Products';
 import UserPalette from '../UserPalette/UserPalette';
-import Pricing from '../Pricing/Pricing';
 import About from '../About/About';
 import Media from '../Media/Media';
 import './Body.css';
@@ -20,7 +19,6 @@ export default function Body() {
             <Ideas />
             <Products />
             <UserPalette />
-            <Pricing />
             <About />
             <Media />
         </div>
